@@ -2,6 +2,10 @@ import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-root',
-  template: `<h1>Hello!</h1>`,
+  template: `
+    <div>
+      <donut-list></donut-list>
+    </div>
+  `,
 })
 export class AppComponent {}
