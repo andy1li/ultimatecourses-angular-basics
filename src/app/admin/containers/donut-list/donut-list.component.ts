@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import type { Donut } from '../../models/donut.model'
 
 @Component({
   selector: 'donut-list',
@@ -10,8 +11,8 @@ import { Component, OnInit } from '@angular/core'
   styles: [],
 })
 export class DonutListComponent implements OnInit {
-  donuts!: any[]
-  donut: any
+  donuts!: Donut[]
+  donut!: Donut
 
   ngOnInit(): void {
     this.donuts = [
