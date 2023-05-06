@@ -4,11 +4,11 @@ import type { Donut } from '../../models/donut.model'
 @Component({
   selector: 'donut-list',
   template: `
-    <ul>
+    <div>
       <donut-card [donut]="donuts[0]" />
       <donut-card [donut]="donuts[1]" />
       <donut-card [donut]="donuts[2]" />
-    </ul>
+    </div>
   `,
   styles: [],
 })
