@@ -5,14 +5,15 @@ import type { Donut } from '../../models/donut.model'
   selector: 'donut-list',
   template: `
     <ul>
-      <li>{{ donut.name }} {{ donut.price }}</li>
+      <donut-card [donut]="donuts[0]" />
+      <donut-card [donut]="donuts[1]" />
+      <donut-card [donut]="donuts[2]" />
     </ul>
   `,
   styles: [],
 })
 export class DonutListComponent implements OnInit {
   donuts!: Donut[]
-  donut!: Donut
 
   ngOnInit(): void {
     this.donuts = [
@@ -38,7 +39,5 @@ export class DonutListComponent implements OnInit {
         description: 'Chocolate drizzled with caramel.',
       },
     ]
-
-    this.donut = this.donuts[0]
   }
 }
