@@ -43,6 +43,7 @@ import type { Donut } from '../../models/donut.model'
       }
     `,
   ],
+  standalone: true,
 })
 export class DonutCardComponent {
   @Input() donut!: Donut

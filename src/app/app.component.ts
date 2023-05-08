@@ -1,4 +1,7 @@
 import { Component } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { RouterOutlet } from '@angular/router'
+import { DonutListComponent } from './admin/containers/donut-list/donut-list.component'
 
 @Component({
   selector: 'app-root',
@@ -32,5 +35,7 @@ import { Component } from '@angular/core'
       }
     `,
   ],
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, DonutListComponent],
 })
 export class AppComponent {}
